@@ -133,7 +133,60 @@ body{
 .movie-list-container{
     padding: 20px;
 }
+.movie-list{
+    display: flex;
+    height: 300px;
+    align-items: center;
+}
+.movie-list-item{
+    margin-right: 30px;
+    position: relative;
+}
+.movie-list-item:hover .movie-list-item-image{
+    transform: scale(1.2);
+    margin: 0 20px;
+    opacity: 0.5;
+}
 .movie-list-item-image{
+    transition: all 1s ease-in-out;
     width: 250px;
+    height: 200px;
     object-fit: cover;
+}
+.movie-list-item:hover .movie-list-item-title, 
+.movie-list-item:hover .movie-list-item-desc, 
+.movie-list-item:hover .movie-list-button{
+    opacity: 1;
+}
+
+.movie-list-item-title{
+    padding: 0 10px;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    opacity: 0;
+}
+.movie-list-item-desc{
+    padding: 0 10px;
+    font-size: 14px;
+    position: absolute;
+    top: 65%;
+    left: 20%;
+    width: 200px;
+    opacity: 0;
+}
+.movie-list-button{
+    padding: 10px;
+    background-color: #4dbf00;
+    color: white;
+    border-radius: 15%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position:absolute;
+    bottom: 1px;
+    left: 100px;
+    opacity: 0;
 }
