@@ -138,6 +138,9 @@ body{
     height: 300px;
     align-items: center;
 }
+.movie-list-wrapper{
+    position: relative;
+}
 .movie-list-item{
     margin-right: 30px;
     position: relative;
@@ -167,6 +170,7 @@ body{
     top: 45%;
     left: 30%;
     opacity: 0;
+    transition: all 1s ease;
 }
 .movie-list-item-desc{
     padding: 0 10px;
@@ -176,6 +180,7 @@ body{
     left: 20%;
     width: 200px;
     opacity: 0;
+    transition: all 1s ease;
 }
 .movie-list-button{
     padding: 10px;
@@ -189,4 +194,14 @@ body{
     bottom: 1px;
     left: 100px;
     opacity: 0;
+    transition: all 1s ease;
+}
+.arrow{
+    font-size: 120px;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    cursor: pointer;
+    color: gray;
+    opacity: 0.5;
 }
