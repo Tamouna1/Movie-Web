@@ -135,6 +135,8 @@ body{
     display: flex;
     height: 300px;
     align-items: center;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
 }
 .movie-list-wrapper{
     position: relative;
@@ -148,12 +150,15 @@ body{
     transform: scale(1.2);
     margin: 0 20px;
     opacity: 0.5;
+    height: 100%;
+    border-radius: 20px;
 }
 .movie-list-item-image{
     transition: all 1s ease-in-out;
     width: 250px;
     height: 200px;
     object-fit: cover;
+    border-radius: 20px;
 }
 .movie-list-item:hover .movie-list-item-title, 
 .movie-list-item:hover .movie-list-item-desc, 
@@ -190,7 +195,7 @@ body{
     border: none;
     cursor: pointer;
     position:absolute;
-    bottom: 1px;
+    bottom: 45px;
     left: 100px;
     opacity: 0;
     transition: all 1s ease;
@@ -201,6 +206,6 @@ body{
     top: 90px;
     right: 0;
     cursor: pointer;
-    color: gray;
+    color: lightgray;
     opacity: 0.5;
 }
