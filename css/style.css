@@ -209,3 +209,8 @@ body{
     color: lightgray;
     opacity: 0.5;
 }
+@media only screen and (max-width: 940px){
+    .menu-container{
+        display: none;
+    }
+}
